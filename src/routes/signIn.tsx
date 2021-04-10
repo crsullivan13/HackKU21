@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'
+import ReactDom from 'react-dom'
+import { Button } from '@material-ui/core'
 
 
 const SignIn = () => {
@@ -34,11 +36,12 @@ const SignIn = () => {
             </p>
             <input type = "password" value={password} onChange={changePassword}/>
             <br/>
-            <button onClick={handleClick}>
+            <Button color="primary" variant="contained" onClick={handleClick}>
             Sign In
-            </button>
+            </Button>
         </div>
     );
 }
+
 
 export default SignIn;
